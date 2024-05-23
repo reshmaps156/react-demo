@@ -10,7 +10,7 @@ import Random from './Random';
 function App() {
   //js code 
   const h1Style = {color:'blue',fontSize : '70px'}
-  const subject = 'react'
+  const subject = 'reactjs'
   const username = 'maxwell'
   return (
     //html code
@@ -24,8 +24,8 @@ function App() {
       <h3>my subject is {subject}</h3>
       <h3>user name is {username}</h3>
       <ul>
-        <li><Example/></li>
-        <li><Random/></li>
+        <li><Example sub={subject} age={28}/></li>
+        <li><Random uname = {username} age={27}/></li>
       </ul>
   
       
