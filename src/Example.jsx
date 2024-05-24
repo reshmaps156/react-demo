@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function Example({sub,age}) {  //key should be in curly bracket while object destructuring
+ const [concept , setConcept] = useState("hook concept")
+
   console.log(sub);
+  console.log(concept);
   //function without argument
   const buttonclick =  ()=>{
     alert('button clicked')
@@ -18,6 +21,8 @@ function Example({sub,age}) {  //key should be in curly bracket while object des
   return (
     <>
     <div>Example</div>
+    <p>initial hook : {concept}</p>
+    <button className='btn btn-dark' onClick={()=>setConcept('new state of hook concept')}>Change</button>
    
     {sub ==='react' ?  <p className='text-primary fs-3 fw-bold'>data shared is {sub}</p> :   <p className='text-danger fs-3 fw-bold'>data shared is not react</p>}
 

@@ -5,6 +5,7 @@ import './Example'
 import './Random'
 import Example from './Example';
 import Random from './Random';
+import User from './User'
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       <ul>
         <li><Example sub={subject} age={28}/></li>
         <li><Random uname = {username} age={27}/></li>
+        <li><User/></li>
       </ul>
   
       
