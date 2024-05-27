@@ -6,6 +6,7 @@ import './Random'
 import Example from './Example';
 import Random from './Random';
 import User from './User'
+import Register from './Register';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <li><Random uname = {username} age={27}/></li>
         <li><User/></li>
       </ul>
+      <div><Register/></div>
   
       
     </>
